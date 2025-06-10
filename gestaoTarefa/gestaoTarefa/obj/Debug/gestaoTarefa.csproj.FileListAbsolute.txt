@@ -1,0 +1,11 @@
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\bin\Debug\gestaoTarefa.exe.config
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\bin\Debug\gestaoTarefa.exe
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\bin\Debug\gestaoTarefa.pdb
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\obj\Debug\gestaoTarefa.csproj.AssemblyReference.cache
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\obj\Debug\gestaoTarefa.csproj.SuggestedBindingRedirects.cache
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\obj\Debug\gestaoTarefa.Form1.resources
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\obj\Debug\gestaoTarefa.Properties.Resources.resources
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\obj\Debug\gestaoTarefa.csproj.GenerateResource.cache
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\obj\Debug\gestaoTarefa.csproj.CoreCompileInputs.cache
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\obj\Debug\gestaoTarefa.exe
+C:\Users\Senai.CEPEAS21104019.000\Desktop\Marcos\teste prova\gestaoTarefa\gestaoTarefa\obj\Debug\gestaoTarefa.pdb

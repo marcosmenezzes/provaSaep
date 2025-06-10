@@ -1,0 +1,19 @@
+using System.Text.RegularExpressions;
+
+criar form 
+string de conexao ex: string strConexao = @"";
+objeto de conexao ex: SqlConnection objConexao;
+
+1º tela
+botao cadastrar
+ string padrao = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+if se estiver no padrão 
+instanciar o objeto passando a string   objConexao = new SqlConnection(strConexao);  
+ 					SqlCommand cmd = new SqlCommand("", objConexao);
+abre conexão 
+comando 
+fecha conexão
+manda a mensagem ex: MessageBox.Show("");
+
+else se tiver fora do padrão 
+manda a mensagem ex: MessageBox.Show("");
