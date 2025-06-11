@@ -1,13 +1,15 @@
-using System.Text.RegularExpressions;
+using System.Text.RegularExpressions; ///
 
 criar form 
 string de conexao ex: string strConexao = @"";
 objeto de conexao ex: SqlConnection objConexao;
-
+------------------------------------------------------------
 1º tela
 botao cadastrar
- string padrao = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
 if se estiver no padrão 
+ string padrao = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            if (Regex.IsMatch(txtEmail.Text, padrao))
+{
 instanciar o objeto passando a string   objConexao = new SqlConnection(strConexao);  
  					SqlCommand cmd = new SqlCommand("", objConexao);
 abre conexão 
@@ -17,3 +19,59 @@ manda a mensagem ex: MessageBox.Show("");
 
 else se tiver fora do padrão 
 manda a mensagem ex: MessageBox.Show("");
+}
+
+--------------------------------------------------------------------
+2º Tela
+criar design 
+txtDescricao
+txtSetor
+cbUsuario -> data source -> add ->  next -> new connection  -> display member = nome -> valueMember = id 
+cbPrioridade -> baixa, media e alta
+repetir ->  ////// string de conexao ex: string strConexao = @"";
+            //////// objeto de conexao ex: SqlConnection objConexao;
+
+ objConexao = new SqlConnection(strConexao);
+                if (txtDescricao.Text.Trim().Length > 0 && txtSetor.Text.Trim().Length > 0)
+                SqlCommand cmd = new SqlCommand("INSERT INTO tabela() VALUES(@,@,@,@)", objConexao);
+                cmd.Parameters.AddWithValue("@", Convert.ToInt32 ());
+                cmd.Parameters.AddWithValue("@", );
+                cmd.Parameters.AddWithValue("@", );
+                cmd.Parameters.AddWithValue("@", );
+                objConexao.Open();
+                cmd.ExecuteNonQuery();
+                objConexao.Close();
+                MessageBox.Show("");
+            }
+            else
+            {
+                MessageBox.Show("");
+            }
+-------------------------------------------------------------------------------------------------------------------------
+
+3º criar a uc e nomear as labels
+
+imita a foto
+
+//listagem das tarefas
+            cmd = new SqlCommand("select t.id, t.descricao, t.setor, t.prioridade, t.setor, u.nome, t.situacao from tarefas as" +
+                " t \r\ninner join usuario as u \r\non t.idUsuario = u.id\r\nwhere t.situacao = 'A Fazer'", objConexao);
+            objConexao.Open();
+            SqlDataReader tarefasAfazer = cmd.ExecuteReader();
+            flpAfazer.Controls.Clear();
+
+
+            while (tarefasAfazer.Read())
+            {
+                ucTarefa ucTarefaAfazer = new ucTarefa();
+                ucTarefaAfazer.Id = Convert.ToInt32(tarefasAfazer[0]);
+                ucTarefaAfazer.Descricao = tarefasAfazer[1].ToString();
+                ucTarefaAfazer.Setor = tarefasAfazer[2].ToString();
+                ucTarefaAfazer.Prioridade = tarefasAfazer[3].ToString();
+                ucTarefaAfazer.Vinculado = tarefasAfazer[4].ToString();
+                ucTarefaAfazer.Situacao = tarefasAfazer[5].ToString();
+
+                flpAfazer.Controls.Add(ucTarefaAfazer);
+            }
+
+            objConexao.Close();
